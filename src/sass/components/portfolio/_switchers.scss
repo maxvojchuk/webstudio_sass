@@ -6,15 +6,13 @@
   padding: 6px 22px;
   border-radius: 4px;
   background: #f5f4fa;
-
-  &:hover {
-    color: $colorTextTertiary;
-    background-color: $colorTextActive;
-    @include animation(color);
-    @include animation(background-color);
-  }
 }
-
+.switcher:hover {
+  color: $colorTextTertiary;
+  background-color: $colorTextActive;
+  @include animation(color);
+  @include animation(background-color);
+}
 .main__projects {
   padding-top: 60px;
   padding-inline: 15px;

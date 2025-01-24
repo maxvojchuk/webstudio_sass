@@ -1,42 +1,38 @@
-.activities {
-  &__container {
-    margin-top: 30px;
-    padding: 60px 15px;
-    min-width: 290px;
-    display: flex;
-    flex-direction: column;
-    align-items: center
-  }
-  &__title {
-    @include text($colorTextPrimary, 28px, 700);
-    text-align: center;
-    letter-spacing: 0.84px;
-    margin-bottom: 30px;
-  }
-
-  &__list {
-    display: flex;
-    gap: 30px;
-    row-gap: 50px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+.activities__container {
+  margin-top: 30px;
+  padding: 60px 15px;
+  min-width: 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
+.activities__title {
+  @include text($colorTextPrimary, 28px, 700);
+  text-align: center;
+  letter-spacing: 0.84px;
+  margin-bottom: 30px;
+}
+.activities__list {
+  display: flex;
+  gap: 30px;
+  row-gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .activity {
   position: relative;
-  &__description {
-    @include text($colorTextTertiary, 14px, 700);
-    text-align: center;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-    background: rgba(47, 48, 58, 0.8);
-    padding: 27px 0px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
+}
+.activity__description {
+  @include text($colorTextTertiary, 14px, 700);
+  text-align: center;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  background: rgba(47, 48, 58, 0.8);
+  padding: 27px 0px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 @media (min-width: 1200px) {

@@ -127,7 +127,6 @@
   color: $colorTextActive;
 }
 
-
 @media (max-width: 480px) {
   .nav__link,
   .links__link {
@@ -166,7 +165,7 @@
   }
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .menu__contacts {
     gap: 20px;
   }

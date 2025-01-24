@@ -11,32 +11,31 @@
 
 .project {
   border: 1px solid #eee;
-  &:hover {
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
-      0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-    @include animation(box-shadow);
-  }
-
-  &__img {
-    margin-bottom: 20px;
-  }
-
-  &__title {
-    @include text($colorTextPrimary, 18px, 700);
-    line-height: 36px;
-    letter-spacing: 1.08px;
-    margin-bottom: 4px;
-    padding: 0px 24px;
-  }
-
-  &__category {
-    @include text($colorTextSecondary, 16px, 400);
-    padding: 0px 24px 20px 24px;
-    line-height: 30px;
-    letter-spacing: 0.48px;
-  }
+}
+.project:hover {
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  @include animation(box-shadow);
 }
 
+.project__img {
+  margin-bottom: 20px;
+}
+
+.project__title {
+  @include text($colorTextPrimary, 18px, 700);
+  line-height: 36px;
+  letter-spacing: 1.08px;
+  margin-bottom: 4px;
+  padding: 0px 24px;
+}
+
+.project__category {
+  @include text($colorTextSecondary, 16px, 400);
+  padding: 0px 24px 20px 24px;
+  line-height: 30px;
+  letter-spacing: 0.48px;
+}
 .list__project {
   max-width: 450px;
   margin: 0 auto;

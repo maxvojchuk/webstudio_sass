@@ -4,28 +4,28 @@
   border-bottom: 1px solid $borders;
   justify-content: space-between;
   align-items: center;
-  &__navigation-menu::after {
-    content: "";
-    background-image: url(/src/img/header/menu.svg);
-    width: 40px;
-    height: 40px;
-    display: block;
-  }
+}
+.header__navigation-menu::after {
+  content: "";
+  background-image: url(/src/img/header/menu.svg);
+  width: 40px;
+  height: 40px;
+  display: block;
+}
 
-  &__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .contacts {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  &:hover {
-    color: $colorTextActive;
-  }
+}
+.contacts:hover {
+  color: $colorTextActive;
 }
 
 .menu {
@@ -38,21 +38,21 @@
   letter-spacing: 0.28px;
   @include animation(color);
   @include animation(border-bottom);
-  &:hover {
-    color: $colorTextActive;
-    border-bottom: 2px solid $colorTextActive;
-    border-radius: 2px;
-  }
+}
+.links__item:hover {
+  color: $colorTextActive;
+  border-bottom: 2px solid $colorTextActive;
+  border-radius: 2px;
 }
 
 .socialmedia__item {
   @include animation(color);
   @include animation(border-bottom);
-  &:hover {
-    color: $colorTextActive;
-    border-bottom: 2px solid $colorTextActive;
-    border-radius: 2px;
-  }
+}
+.socialmedia__item:hover {
+  color: $colorTextActive;
+  border-bottom: 2px solid $colorTextActive;
+  border-radius: 2px;
 }
 .logo--active {
   color: $colorTextPrimary;
@@ -66,17 +66,15 @@
   gap: 8px;
   @include animation(color);
   @include animation(border-bottom);
-  &:hover {
-    color: $colorTextActive;
-    border-bottom: 2px solid $colorTextActive;
-    border-radius: 2px;
-  }
+}
+.contacts__item:hover {
+  color: $colorTextActive;
+  border-bottom: 2px solid $colorTextActive;
+  border-radius: 2px;
 }
 
-.contacts__item:nth-child(2) {
-  &:hover {
-    padding-bottom: 2px;
-  }
+.contacts__item:nth-child(2):hover {
+  padding-bottom: 2px;
 }
 
 .contacts__item::before {

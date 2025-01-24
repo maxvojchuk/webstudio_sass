@@ -1,38 +1,37 @@
 .footer {
   background-color: $backgroundColorPrimary;
-
-  &__logo {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-
-  &__logo--active {
-    color: $colorTextTertiary;
-  }
-
-  &__container {
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    padding: 60px 0px;
-  }
-
-  &__information {
-    @include text(rgba(255, 255, 255, 0.6), 14px, 400);
-    text-align: center;
-    line-height: 24px;
-    letter-spacing: 0.42px;
-    &--active {
-      color: $colorTextTertiary;
-    }
-  }
-
-  &__mailing {
-    min-width: 320px;
-    max-width: 570px;
-  }
 }
 
+.footer__logo {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.footer__logo--active {
+  color: $colorTextTertiary;
+}
+
+.footer__container {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  padding: 60px 0px;
+}
+
+.footer__information {
+  @include text(rgba(255, 255, 255, 0.6), 14px, 400);
+  text-align: center;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+}
+.footer--active {
+  color: $colorTextTertiary;
+}
+
+.footer__mailing {
+  min-width: 320px;
+  max-width: 570px;
+}
 .information__container {
   gap: 8px;
   flex-direction: column;
@@ -40,39 +39,36 @@
   display: flex;
 }
 
-.social-media {
-  &__title {
-    @include text($colorTextTertiary, 14px, 700);
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 20px;
-  }
+.social-media__title {
+  @include text($colorTextTertiary, 14px, 700);
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-  &__wrapper {
-    width: 44px;
-    height: 44px;
-    padding: 12px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 0px solid $textFontSecondary;
-    border-radius: 50%;
-    &:hover {
-      background-color: $colorTextActive;
-      @include animation(background-color);
-    }
-  }
+.social-media__wrapper {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 0px solid $textFontSecondary;
+  border-radius: 50%;
+}
+.social-media:hover {
+  background-color: $colorTextActive;
+  @include animation(background-color);
+}
+.social-media__links {
+  display: flex;
+  gap: 10px;
+}
 
-  &__links {
-    display: flex;
-    gap: 10px;
-  }
-
-  &__icon {
-    fill: $colorTextTertiary;
-    &:hover {
-      fill: $colorTextTertiary;
-    }
-  }
+.social-media__icon {
+  fill: $colorTextTertiary;
+}
+.social-media:hover {
+  fill: $colorTextTertiary;
 }
 
 .footer__social-media {
@@ -84,56 +80,55 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  &__title {
-    @include text($colorTextTertiary, 14px, 700);
-    text-align: center;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-  }
-
-  &__input {
-    background-color: transparent;
-    outline: none;
-    border: none;
-    border-radius: 4px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    padding: 15px;
-
-    color: $colorTextSecondary;
-  }
-  &__container {
-    padding: 0px 15px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  &__btn {
-    @include text($colorTextTertiary, 16px, 700);
-    text-align: center;
-    display: flex;
-    gap: 12px;
-    line-height: 30px; /* 187.5% */
-    letter-spacing: 0.96px;
-    padding: 10px 31px;
-    background-color: $colorTextActive;
-    border-radius: 4px;
-    background: #2196f3;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    max-width: 200px;
-    &::after {
-      content: "";
-      background-image: url(/src/img/footer/plane.svg);
-      width: 24px;
-      height: 24px;
-      display: block;
-    }
-  }
+}
+.mailing__title {
+  @include text($colorTextTertiary, 14px, 700);
+  text-align: center;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
 }
 
+.mailing__input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+
+  color: $colorTextSecondary;
+}
+.mailing__container {
+  padding: 0px 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mailing__btn {
+  @include text($colorTextTertiary, 16px, 700);
+  text-align: center;
+  display: flex;
+  gap: 12px;
+  line-height: 30px; /* 187.5% */
+  letter-spacing: 0.96px;
+  padding: 10px 31px;
+  background-color: $colorTextActive;
+  border-radius: 4px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  max-width: 200px;
+}
+.mailing::after {
+  content: "";
+  background-image: url(/src/img/footer/plane.svg);
+  width: 24px;
+  height: 24px;
+  display: block;
+}
 @media (min-width: 768px) {
   .footer__wrapper {
     display: flex;

@@ -5,19 +5,19 @@
 
 .our-team {
   margin-top: 60px;
-  &__title {
-    @include text($colorTextPrimary, 28px, 700);
-    line-height: 33px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    margin-bottom: 30px;
-  }
+}
+.our-team__title {
+  @include text($colorTextPrimary, 28px, 700);
+  line-height: 33px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 30px;
+}
 
-  &__list {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
+.our-team__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .worker {
@@ -26,44 +26,42 @@
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   padding-bottom: 36px;
-
-  &__photo {
-    margin-bottom: 30px;
-  }
-
-  &__title {
-    @include text($colorTextPrimary, 16px, 500);
-    line-height: 19px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  &__job {
-    @include text($colorTextSecondary, 16px, 400);
-    line-height: 19px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    margin-bottom: 16px;
-  }
-
-  &__links {
-    @extend %flexibility;
-    gap: 10px;
-  }
-
-  &__link {
-    padding: 12px;
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-    &:hover {
-      background-color: $colorTextActive;
-      @include animation(background-color);
-    }
-  }
+}
+.worker__photo {
+  margin-bottom: 30px;
 }
 
+.worker__title {
+  @include text($colorTextPrimary, 16px, 500);
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.worker__job {
+  @include text($colorTextSecondary, 16px, 400);
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.worker__links {
+  @extend %flexibility;
+  gap: 10px;
+}
+
+.worker__link {
+  padding: 12px;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+.worker:hover {
+  background-color: $colorTextActive;
+  @include animation(background-color);
+}
 @media (min-width: 768px) {
   .our-team__list {
     flex-direction: row;
@@ -83,11 +81,11 @@
 
   .our-team {
     margin-top: 95px;
-    &__title {
-      @include text($colorTextPrimary, 36px, 700);
-      margin-bottom: 50px;
-      letter-spacing: 1.08px;
-    }
+  }
+  .our-team__title {
+    @include text($colorTextPrimary, 36px, 700);
+    margin-bottom: 50px;
+    letter-spacing: 1.08px;
   }
 
   .worker {

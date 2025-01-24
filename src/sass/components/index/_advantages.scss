@@ -1,44 +1,39 @@
 .advantages {
   padding: 60px 15px 0px 15px;
-
-  &__title {
-    display: none;
-  }
-  &__list {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
 }
 
+.advantages__title {
+  display: none;
+}
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 .advantage {
   @extend %flexibility;
   flex-direction: column;
-
-  &__svg {
-    width: 70px;
-    height: 70px;
-    &:hover {
-      fill: $colorTextActive;
-      @include animation(fill);
-    }
-  }
-
-  &__title {
-    @include text($colorTextPrimary, 14px, 700);
-    margin-bottom: 10px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-align: center;
-  }
-
-  &__text {
-    @include text($colorTextSecondary, 14px, 400);
-    line-height: 24px;
-    letter-spacing: 0.03em;
+}
+.advantage__svg {
+  width: 70px;
+  height: 70px;
+  &:hover {
+    fill: $colorTextActive;
+    @include animation(fill);
   }
 }
-
+.advantage__title {
+  @include text($colorTextPrimary, 14px, 700);
+  margin-bottom: 10px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.advantage__text {
+  @include text($colorTextSecondary, 14px, 400);
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
 .icon__wrapper {
   border-radius: 4px;
   background: #f5f4fa;
@@ -56,11 +51,10 @@
 
   .advantage {
     flex-basis: calc((100% - 30px) / 2);
-    &__title {
-      text-align: left;
-    }
   }
-
+  .advantage__title {
+    text-align: left;
+  }
   .advantage:nth-child(3) {
     position: relative;
     top: -10px;
@@ -77,8 +71,8 @@
 
   .advantage {
     flex-basis: calc((100% - 90px) / 4);
-    &__text {
-      text-align: left;
-    }
+  }
+  .advantage__text {
+    text-align: left;
   }
 }

@@ -33,9 +33,9 @@ img {
   height: 20px;
   fill: $colorTextSecondary;
   @include animation(fill);
-  &:hover {
-    fill: $colorTextTertiary;
-  }
+}
+.socialmedia__icon:hover {
+  fill: $colorTextTertiary;
 }
 
 .hidden {
